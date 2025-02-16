@@ -14,7 +14,8 @@ class NativeAppServiceProvider implements ProvidesPhpIni
     public function boot(): void
     {
         Window::open()
-        ->route('filament.admin.auth.login')
+        // ->route('filament.admin.auth.login')
+        ->route('home')
         ->rememberState()
         ->resizable(false)
         ->showDevTools(false)
